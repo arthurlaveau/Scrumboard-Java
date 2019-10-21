@@ -1,0 +1,60 @@
+a#ajouterTache, a#ajouterUtilisateur {
+    background-color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    color: #428bca;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a#ajouterUtilisateur {
+	margin-right: 10px;
+}
+
+.couleur-type-tache {
+    height: 10px;
+    border-top-right-radius: 3px;
+    box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+    border-top-left-radius: 3px;
+}
+.couleur-type-tache.Vert {
+    background-color: green;
+}
+.couleur-type-tache.Orange {
+    background-color: orange;
+}
+.couleur-type-tache.Magenta {
+    background-color: purple;
+}
+.couleur-type-tache.Bleu {
+    background-color: blue;
+}
+article[draggable="true"] {
+    cursor: move;
+}
+div.panel {
+    box-shadow: 0px 5px 10px #717171;
+}
+#navbarColor02 {
+    display: flex !important;
+}
+#navbarColor02 p {
+	display: block;
+    margin: auto 30px auto auto !important;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+	background-color: #428bca !important;
+}
+span.util-attribue {
+    float: left;
+    background-color: #c5c5c5;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    color: #fff;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    line-height: 18px;
+    display: flex;
+}

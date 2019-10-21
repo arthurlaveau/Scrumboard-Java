@@ -1,0 +1,39 @@
+a#ajouterTache {
+
+    background-color: #428bca;
+    display: inline-block;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 5px;
+	cursor: pointer;
+	
+}
+#barreOutils {
+    padding: 30px 0;
+    max-width: 1260px;
+    margin: auto;
+}
+.couleur-type-tache {
+    height: 10px;
+    border-top-right-radius: 3px;
+    box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+    border-top-left-radius: 3px;
+}
+.couleur-type-tache.Vert {
+    background-color: green;
+}
+.couleur-type-tache.Orange {
+    background-color: orange;
+}
+.couleur-type-tache.Magenta {
+    background-color: purple;
+}
+.couleur-type-tache.Bleu {
+    background-color: blue;
+}
+article[draggable="true"] {
+    cursor: move;
+}
+div.panel {
+    box-shadow: 0px 5px 10px #663c7b;
+}

@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #428bca;
+    background-image: url('https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+h1 {
+	font-size: 20px;
+	line-height: 1.25em;
+	margin: 0 0 1.25em;
+	color: #ccc;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+.v-center-wrap {
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+
+.v-center-stuff {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+@media ( min-width : 640px) {
+	.half {
+		width: 50%;
+	}
+}
+
+input {
+	width: 100%;
+	margin: 0 0 2em;
+	padding-top: 0.75em;
+	border: none;
+	border-bottom: 1px solid #24252a;
+	background: none;
+	font-size: 1em;
+	line-height: 1.4em;
+	text-align: left;
+	transition: border 0.15s linear;
+}
+
+input.placeholder {
+	color: #24252a;
+}
+
+input:-moz-placeholder {
+	color: #24252a;
+}
+
+input::-moz-placeholder {
+	color: #24252a;
+}
+
+input::-webkit-input-placeholder {
+	color: #24252a;
+}
+
+input:focus {
+	border-color: #428bca;
+}
+
+label {
+	text-align: left;
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 300;
+	letter-spacing: 0.6px;
+	color: #ababad;
+}
+
+.btn {
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 30px;
+	background: transparent;
+	display: inline-block;
+	font-size: 0.65em;
+	padding: 1.3em 2em 1.4em;
+	letter-spacing: 0.6px;
+	width: 100%;
+	max-width: 150px;
+	transition: 0.1s linear;
+}
+
+.btn--white {
+	color: #ccc;
+	border-color: #ccc;
+}
+
+.btn--white:hover {
+	border-color: #428bca;
+	color: #428bca;
+}
+
+.btn--green {
+	color: #428bca;
+	border-color: #428bca;
+}
+
+.btn--green:hover {
+	border-color: #24252a;
+	color: #24252a;
+}
+
+.btn--green_reverse {
+	color: #428bca;
+	border-color: #428bca;
+}
+
+.btn--green_reverse:hover {
+	border-color: #ccc;
+	color: #ccc;
+}
+
+.sign-in {
+	max-width: 700px;
+	max-height: 440px;
+	margin: 4em auto;
+	position: relative;
+	z-index: 1;
+	border-radius: 10px;
+	text-align: center;
+	background: rgba(36, 37, 42, .8);
+	color: white;
+	box-shadow: 0 0 40px rgba(36, 37, 42, .5);
+	padding: 0 10px;
+}
+
+.sign-in .half {
+	padding: 2em 3.5em;
+	position: relative;
+	z-index: 1;
+}
+
+.sign-in:after {
+	position: absolute;
+	content: '';
+	background: #f9f9f9;
+	top: -20px;
+	width: calc(50% - 10px);
+	height: calc(100% + 40px);
+	z-index: 0;
+	transition: left 0.3s cubic-bezier(1, 0, 0, 1);
+	border-radius: 10px;
+}
+
+.sign-in form {
+	visibility: hidden;
+}
+
+.sign-in form h1 {
+	color: #428bca;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+.sign-in form button {
+	margin-top: 2.6em;
+}
+
+.sign-in .caption {
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	padding: 0 5em;
+	transform: translate(0, -50%);
+}
+
+.sign-in .msg {
+	position: absolute;
+	left: 0;
+	top: 2em;
+	padding: 0 3em;
+	color: #24252a;
+}
+
+.fade {
+	transition: opacity 0.1s linear, transform 0.4s
+		cubic-bezier(0.23, 1, 0.32, 1);
+	opacity: 0;
+	transform: translate(0, 20px);
+}
+
+.sign-in[data-finger='false']:after {
+	left: 10px;
+}
+
+.sign-in[data-finger='false'] .caption {
+	visibility: hidden;
+}
+
+.sign-in[data-finger='false'] form {
+	visibility: visible;
+}
+
+.sign-in[data-finger='false'] form .fade {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(1) {
+	transition-delay: 0.05s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(2) {
+	transition-delay: 0.1s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(3) {
+	transition-delay: 0.15s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(4) {
+	transition-delay: 0.2s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(5) {
+	transition-delay: 0.25s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(6) {
+	transition-delay: 0.3s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(7) {
+	transition-delay: 0.35s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(8) {
+	transition-delay: 0.4s;
+}
+
+.sign-in[data-finger='false'] form .fade:nth-child(9) {
+	transition-delay: 0.45s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(1) {
+	transition-delay: 0.05s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(2) {
+	transition-delay: 0.1s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(3) {
+	transition-delay: 0.15s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(4) {
+	transition-delay: 0.2s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(5) {
+	transition-delay: 0.25s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(6) {
+	transition-delay: 0.3s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(7) {
+	transition-delay: 0.35s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(8) {
+	transition-delay: 0.4s;
+}
+
+.sign-in[data-finger='false'] .caption-finger .fade:nth-child(9) {
+	transition-delay: 0.45s;
+}
+
+.sign-in[data-finger='false'] .msg {
+	opacity: 0;
+	transform: translate(0, 10px);
+	transition: none;
+}
